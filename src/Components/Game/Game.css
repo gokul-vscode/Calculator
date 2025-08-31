@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.Calculator {
+  max-width: 300px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 10px;
+  background: #ff002b;
+  background-image: url("../../assets/galaxy.jpeg");
+  color: white;
+  text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  animation: bgScroll 20s linear infinite;
+}
+@keyframes bgScroll {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+.display {
+  margin-bottom: 10px;
+}
+.display input {
+  width: 100%;
+  font-size: 24px;
+  padding: 10px;
+  margin-bottom: 5px;
+  text-align: right;
+}
+.result {
+  width: 150px;
+  height: 30px;
+  background-color: white;
+  font-size: 20px;
+  text-align: right;
+  padding: 5px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #00e676;
+  border-radius: 5px;
+}
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+button {
+  font-size: 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background: #3e4a61;
+  color: white;
+  cursor: pointer;
+  transition: background 0.2;
+}
+button:hover {
+  background: #556;
+}
