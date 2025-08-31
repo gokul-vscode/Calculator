@@ -1,8 +1,6 @@
 import React, { useState } from 'react'
 import '../Game/Game.css'
-import galaxy from '../../assets/galaxy.jpeg'
-import { IoBackspace } from "react-icons/io5";
-
+import { evaluate } from 'mathjs';
 function Game() {
     const [input,setInput] =useState("");
     const [result,setResult] = useState("");
@@ -10,7 +8,8 @@ function Game() {
     const handleClick = (value)=>{
         if(value ==="="){
             try{
-                setResult(eval(input).toString());
+                const output = evaluate(input)
+                setResult(output.toString());
             }catch(error){
                 setResult('error');
             }
