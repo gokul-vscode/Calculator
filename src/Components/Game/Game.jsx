@@ -47,7 +47,7 @@ function Game() {
   return (
     <>
     <div className="head">
-        <h1>CALCULATOR</h1>
+        <h1>CALCULATOR </h1>
     </div>
       <div className="Calculator">
         <div className="display">
